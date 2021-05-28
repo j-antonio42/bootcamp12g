@@ -1,0 +1,31 @@
+*{
+    font-family: arial;
+}
+
+header {
+    background-color: cyan;
+    padding: 10px;
+}
+
+nav {
+    background-color: palevioletred;
+    color: blanchedalmond;
+}
+section {
+    background-color: blue;
+    padding: 10px;
+    color: papayawhip;
+}
+
+article {
+    background-color: pink;
+    color: black;
+}
+
+aside {
+    background-color: magenta;
+}
+
+footer {
+    background-color: gray;
+}
