@@ -5,9 +5,14 @@ main{
     align-items: center;
     margin-left: 70px;
     margin-right: 70px;
-    font-family: "Big Shoulders Display" ;
+    font-family: "Big Shoulders Display";
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
     .auto{
-        border-radius: 5px;
         padding: 30px;
         h1{
             color:hsla(0, 0%, 100%, 0.75);   
@@ -17,10 +22,10 @@ main{
            color: hsl(0, 0%, 95%);
         }
         button{
-            height: 35px;
-            width: 100px;
+            height: 3em;
+            width: 8em;
             padding: 5px;
-            border-radius: 15px;
+            border-radius: 20px;
             background-color: hsl(0, 0%, 95%);
             font-family: "Lexend Deca";
             &.naranja{
