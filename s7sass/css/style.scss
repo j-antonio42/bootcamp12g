@@ -1,0 +1,48 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family:  Big Shoulders Display ;
+    .auto{
+        border-radius: 10px;
+        padding: 30px;
+        h1{
+            color:hsla(0, 0%, 100%, 0.75);   
+        }
+        p{
+           color: hsl(0, 0%, 95%)  
+        }
+        button{
+            height: 35px;
+            width: 100px;
+            padding: 5px;
+            border-radius: 15px;
+            background-color: hsl(0, 0%, 95%);
+            color: rgb(51, 42, 42);
+        }
+        &.sedan{
+            background-color: hsl(31, 77%, 52%);
+            
+        }
+        &.suv{
+            background-color: hsl(184, 100%, 22%);
+        }
+        &.luxury{
+            background-color: hsl(179, 100%, 13%);
+        }
+    }
+    
+}
+
+@media only screen and (min-width:576px){
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+}
