@@ -5,15 +5,16 @@ main{
     align-items: center;
     margin-left: 70px;
     margin-right: 70px;
-    font-family:  Big Shoulders Display ;
+    font-family: "Big Shoulders Display" ;
     .auto{
-        border-radius: 10px;
+        border-radius: 5px;
         padding: 30px;
         h1{
             color:hsla(0, 0%, 100%, 0.75);   
         }
         p{
-           color: hsl(0, 0%, 95%)  
+            font-family: "Lexend Deca";    
+           color: hsl(0, 0%, 95%);
         }
         button{
             height: 35px;
@@ -21,7 +22,16 @@ main{
             padding: 5px;
             border-radius: 15px;
             background-color: hsl(0, 0%, 95%);
-            color: rgb(51, 42, 42);
+            font-family: "Lexend Deca";
+            &.naranja{
+                color: hsl(31, 77%, 52%);
+            }
+            &.verde{
+                color: hsl(184, 100%, 22%);
+            }
+            &.oscuro{
+                color: hsl(179, 100%, 13%);
+            }
         }
         &.sedan{
             background-color: hsl(31, 77%, 52%);
@@ -33,8 +43,7 @@ main{
         &.luxury{
             background-color: hsl(179, 100%, 13%);
         }
-    }
-    
+    }    
 }
 
 @media only screen and (min-width:576px){

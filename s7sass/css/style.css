@@ -14,11 +14,11 @@ main {
           align-items: center;
   margin-left: 70px;
   margin-right: 70px;
-  font-family: Big Shoulders Display;
+  font-family: "Big Shoulders Display";
 }
 
 main .auto {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 30px;
 }
 
@@ -27,6 +27,7 @@ main .auto h1 {
 }
 
 main .auto p {
+  font-family: "Lexend Deca";
   color: #f2f2f2;
 }
 
@@ -36,7 +37,19 @@ main .auto button {
   padding: 5px;
   border-radius: 15px;
   background-color: #f2f2f2;
-  color: #332a2a;
+  font-family: "Lexend Deca";
+}
+
+main .auto button.naranja {
+  color: #e38826;
+}
+
+main .auto button.verde {
+  color: #006970;
+}
+
+main .auto button.oscuro {
+  color: #004241;
 }
 
 main .auto.sedan {
