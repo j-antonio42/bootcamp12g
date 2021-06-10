@@ -1,0 +1,87 @@
+/* colors */
+$Very-Dark-Magenta: hsl(300, 43%, 22%);
+$Soft-Pink:  hsl(333, 80%, 67%);
+$Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+$Light-Grayish-Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+/* fonts */
+.contenedor{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    height: 70vh;
+    font-family: "Spartan";
+}
+
+
+.container{
+
+
+    .row{
+        h1{
+            color: $Very-Dark-Magenta;
+            font-weight: bold;
+        }
+
+        p{
+            color: $Dark-Grayish-Magenta;
+        }
+
+        .stars{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color:$Light-Grayish-Magenta;
+
+                &.review{
+                    margin-right: 0;
+                }
+
+                &.report{
+                    margin-right: 0;
+                }
+
+                &.best{
+                    margin-right: 0;
+                }
+
+            }
+        }
+            
+    }
+}
+
+.carta{
+    border-radius: 10px;
+    background-color: $Very-Dark-Magenta;
+    color: $White ;
+    .card-header{
+        align-items: center;
+        margin-left: 15px;
+        
+        div{
+
+            img{
+                border-radius: 100%;
+                width: 60px;
+            }
+        }
+
+        .carlos{
+
+        margin-top: 10px;
+        padding-left: 10px;
+
+        h4{
+             margin-bottom: 0;
+         }
+
+        }
+    }
+}

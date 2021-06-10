@@ -1,0 +1,29 @@
+.row {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.row .col-12 {
+  background-color: cyan;
+}
+
+.row .col-12 .col-6 {
+  background-color: purple;
+}
+
+#seccion {
+  background-color: royalblue;
+}
+
+#seccion article {
+  background-color: pink;
+}
+
+aside {
+  background-color: violet;
+}
+
+footer {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

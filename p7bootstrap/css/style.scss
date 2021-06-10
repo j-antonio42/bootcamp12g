@@ -1,0 +1,28 @@
+$Light-gray: hsl(0, 0%, 81%);
+$Light-grayish-blue: hsl(210, 46%, 95%);
+
+$Moderate-violet: hsl(263, 55%, 52%);
+$Very-dark-grayish-blue: hsl(217, 19%, 35%);
+$Very-dark-blackish-blue: hsl(219, 29%, 14%);
+$White: hsl(0, 0%, 100%);
+
+main{
+    font-family: Barlow Semi Condensed;
+}
+
+.dude{
+    border-radius: 50%;
+    border: 2p rebeccapurple;
+}
+
+#daniel{
+    background-color: $Moderate-violet;
+    border-radius: 5%;
+    .comillas{
+    background-image: url(img\bg-pattern-quotation.svg)
+    }
+
+}
+
+
+

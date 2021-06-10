@@ -1,0 +1,18 @@
+main {
+  font-family: Barlow Semi Condensed;
+}
+
+.dude {
+  border-radius: 50%;
+  border: 2p rebeccapurple;
+}
+
+#daniel {
+  background-color: #7541c8;
+  border-radius: 5%;
+}
+
+#daniel .comillas {
+  background-image: url(img\bg-pattern-quotation.svg);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+/* colors */
+/* fonts */
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  height: 70vh;
+  font-family: "Spartan";
+}
+
+.container .row h1 {
+  color: #502050;
+  font-weight: bold;
+}
+
+.container .row p {
+  color: #937b92;
+}
+
+.container .row .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .row .stars div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f2f7;
+}
+
+.container .row .stars div.review {
+  margin-right: 0;
+}
+
+.container .row .stars div.report {
+  margin-right: 0;
+}
+
+.container .row .stars div.best {
+  margin-right: 0;
+}
+
+.carta {
+  border-radius: 10px;
+  background-color: #502050;
+  color: white;
+}
+
+.carta .card-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+.carta .card-header div img {
+  border-radius: 100%;
+  width: 60px;
+}
+
+.carta .card-header .carlos {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.carta .card-header .carlos h4 {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
