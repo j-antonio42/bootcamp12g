@@ -21,7 +21,7 @@ $White: hsl(0, 0%, 100%);
     .row{
         h1{
             color: $Very-Dark-Magenta;
-            font-weight: bold;
+            font-weight: bolder;
         }
 
         p{
@@ -32,6 +32,7 @@ $White: hsl(0, 0%, 100%);
             display: flex;
             flex-direction: column;
             justify-content: center;
+           
             div{
                 display: flex;
                 flex-direction: row;
@@ -39,16 +40,36 @@ $White: hsl(0, 0%, 100%);
                 align-items: center;
                 background-color:$Light-Grayish-Magenta;
 
+
+
                 &.review{
-                    margin-right: 0;
+                    border-radius: 10px;
+                    width: 500px;
+                    .rated{
+                        font-weight: bolder;
+                        color: $Very-Dark-Magenta;
+                    }
+                    
                 }
 
                 &.report{
-                    margin-right: 0;
+                    margin-left: 20px;
+                    width: 500px;
+                    border-radius: 10px;
+                    .rated{
+                        font-weight: bolder;
+                        color: $Very-Dark-Magenta;
+                    }
                 }
 
                 &.best{
-                    margin-right: 0;
+                    margin-left: 50px;
+                    width: 500px;
+                    border-radius: 10px;
+                    .rated{
+                        font-weight: bolder;
+                        color: $Very-Dark-Magenta;
+                    }
                 }
 
             }
@@ -82,6 +103,12 @@ $White: hsl(0, 0%, 100%);
              margin-bottom: 0;
          }
 
+        }
+    }
+
+    .card-body{
+        p{
+            color: $White;
         }
     }
 }

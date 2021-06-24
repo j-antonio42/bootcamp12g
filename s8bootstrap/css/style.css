@@ -14,7 +14,7 @@
 
 .container .row h1 {
   color: #502050;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .container .row p {
@@ -52,15 +52,35 @@
 }
 
 .container .row .stars div.review {
-  margin-right: 0;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.container .row .stars div.review .rated {
+  font-weight: bolder;
+  color: #502050;
 }
 
 .container .row .stars div.report {
-  margin-right: 0;
+  margin-left: 20px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.container .row .stars div.report .rated {
+  font-weight: bolder;
+  color: #502050;
 }
 
 .container .row .stars div.best {
-  margin-right: 0;
+  margin-left: 50px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.container .row .stars div.best .rated {
+  font-weight: bolder;
+  color: #502050;
 }
 
 .carta {
@@ -88,5 +108,9 @@
 
 .carta .card-header .carlos h4 {
   margin-bottom: 0;
+}
+
+.carta .card-body p {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
