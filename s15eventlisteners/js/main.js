@@ -3,22 +3,29 @@ let save = document.getElementById("save")
 mentorArray = []
 
 
+
+
 save.addEventListener("click", () => {
     
-    let mentorName = document.getElementById("mentorName").value
-    //console.log(mentorName)
-    let mentorLastName = document.getElementById("mentorLastName").value
-    //console.log(mentorLastName)
-    document.getElementById("mentorName").value = ""
-    document.getElementById("mentorLastName").value = ""
-    mentorObject = { mentorName, mentorLastName}
+    let mentorObject = {}
+    let fields = document.querySelectorAll("#person-form input")
+    fields.forEach(input =>{
 
+        let property = input.id
+        let value = input.value
+
+        mentorObject = {...mentorObject, [property]:value}
+    })
+    console.log(mentorObject)
     mentorArray.push(mentorObject)
     console.log(mentorArray)
+    
+    document.getElementById("person-table").innerHTML = ""
 
-    mentorArray.forEach( (mentor, index) =>  {
+    mentorArray.forEach( (mentor, index ) =>  {
+        
         let {mentorName, mentorLastName } = mentor 
-        let personRow = document.createElement("tr")
+        let personRow = document.createElement("tr" )
         //<tr></tr>
         let indexTd = document.createElement("td")
         //<td></td>
@@ -30,9 +37,16 @@ save.addEventListener("click", () => {
     
         let nameText = document.createTextNode( mentorName )
         let lastnameText = document.createTextNode( mentorLastName )
-        let indexText = document.createTextNode( index + 1 )
+        let indexText = document.createTextNode( index +1 )
         let deleteButton = document.createElement("button")
         deleteButton.classList.add("btn", "btn-warning")
+        deleteButton.dataset.personIndex = index
+        deleteButton.addEventListener("click", event =>{
+            let personIndex = event.target.dataset.personIndex
+            mentorArray.splice(personIndex,1)
+            //pendiente anexar todo el pintado de la tabla
+        } )
+       
     
         let buttonText = document.createTextNode("Borrar")
         deleteButton.appendChild(buttonText)
@@ -49,8 +63,9 @@ save.addEventListener("click", () => {
         personRow.appendChild( buttonTd )
     
         document.getElementById("person-table").appendChild( personRow )
+        
     })
-     mentorArray = []
-})
+     
 
+})
 

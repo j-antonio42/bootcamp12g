@@ -2,4 +2,15 @@
     flex-direction: row;
     justify-content: center;
     border-color: rgb(241, 241, 241);
+    background-color: rgb(144, 218, 208);
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(138, 224, 155);
+    .table{
+        color: white;
+    }
 }
