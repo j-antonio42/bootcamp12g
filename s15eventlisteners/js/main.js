@@ -15,11 +15,14 @@ save.addEventListener("click", () => {
         let value = input.value
 
         mentorObject = {...mentorObject, [property]:value}
+        input.value = ""
     })
     console.log(mentorObject)
     mentorArray.push(mentorObject)
     console.log(mentorArray)
+
     
+    const renderMentorsTable = (mentorArray) => {
     document.getElementById("person-table").innerHTML = ""
 
     mentorArray.forEach( (mentor, index ) =>  {
@@ -44,7 +47,7 @@ save.addEventListener("click", () => {
         deleteButton.addEventListener("click", event =>{
             let personIndex = event.target.dataset.personIndex
             mentorArray.splice(personIndex,1)
-            //pendiente anexar todo el pintado de la tabla
+            renderMentorsTable(mentorArray)
         } )
        
     
@@ -65,7 +68,7 @@ save.addEventListener("click", () => {
         document.getElementById("person-table").appendChild( personRow )
         
     })
-     
+}
+renderMentorsTable(mentorArray)
 
 })
-
